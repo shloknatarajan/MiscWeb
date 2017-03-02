@@ -1,0 +1,31 @@
+var Mary = '{ "height":1.9, "age":36, "eyeColor":"brown"}';
+
+// 1. use JSON.parse() to create an object 'objectMary':
+var objectMary = JSON.parse(Mary);
+alert(objectMary.age);
+
+// 2. Using Stringify to serialize object
+var MaryTwo = new Object();
+MaryTwo.height = 1.9;
+MaryTwo.age = 36;
+MaryTwo.eyecolor = "brown";
+
+console.log(JSON.stringify(MaryTwo));
+
+// 3. Simulating Associative Arrays
+var conference = {
+	"startDay" : "Monday",
+	"nextDay" : "Tuesday",
+	"endDay" : "Wednesday"
+};
+console.log(conference['endDay']);
+
+//4. Creating an object with JSON (automatic)
+var user = {
+	"username" : "laura123",
+	"city" : "New York",
+	"system" : "linux",
+	"PC":"Dell"
+};
+console.log("User " + user.username + " is located in " + user.city + " and uses " + user.system + " on a " + user.PC + " computer");
+

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Material Design - Responsive Table</title>
+  <!--Import Google Icon Font-->
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Import Jquery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+
+   <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
+
+  <!-- Program's style sheet -->
+  <link rel="stylesheet" href="css/styleedited.css">
+
+<script>
+function addRow() {
+    // Match, Result, Red1, Blue1, Red2, Blue2  
+    var match = document.getElementById("match");
+    var result = document.getElementById("result");
+    var Red1 = document.getElementById("Red1");
+    var Blue1 = document.getElementById("Blue1");
+    var Red2 = document.getElementById("Red2");
+    var Blue2 = document.getElementById("Blue2");
+    var table = document.getElementById("resultstable");
+ 
+    var rowCount = table.rows.length;
+    var row = table.insertRow(rowCount);
+ 
+    row.insertCell(0).innerHTML= match.value;
+    row.insertCell(1).innerHTML= result.value;
+    row.insertCell(2).innerHTML= red1.value;
+    row.insertCell(3).innerHTML= blue1.value;
+
+    rowCount = table.rows.length;
+    row = table.insertRow(rowCount);
+
+    row.insertCell(0).innerHTML= "";
+    row.insertCell(1).innerHTML= "";
+    row.insertCell(2).innerHTML= red2.value;
+    row.insertCell(3).innerHTML= blue2.value;
+ 
+}
+ 
+function deleteRow(obj) {
+      
+    var index = obj.parentNode.parentNode.rowIndex;
+    var table = document.getElementById("resultstable");
+    table.deleteRow(index);
+    
+}
+ 
+
+ 
+function load() {
+    
+    console.log("Page load finished");
+ 
+}
+</script>
+
+</head>
+
+<body>
+  <div id="myform">
+  <b>Enter match, result, red1, blue1, red2, and blue2</b>
+  <table>
+      <tr>
+          <td>match:</td>
+          <td><input type="text" id="match"></td>
+      </tr>
+      <tr>
+          <td>result:</td>
+          <td><input type="text" id="result">
+      </tr>
+      <tr>
+          <td>red1:</td>
+          <td><input type="text" id="red1"></td>
+      </tr>
+      <tr>
+          <td>blue1:</td>
+          <td><input type="text" id="blue1">
+      </tr>
+      <tr>
+          <td>red2:</td>
+          <td><input type="text" id="red2"></td>
+      </tr>
+      <tr>
+          <td>blue2:</td>
+          <td><input type="text" id="blue2">
+      </tr>
+      <input type="button" id="add" value="Add" onclick="Javascript:addRow()"></td>
+  </table>
+  </div>
+
+  <div id="tablecontainer">
+  <!-- Responsive table starts here -->
+  <!-- For correct display on small screens you must add 'data-title' to each 'td' in your table -->
+  <div class="table-responsive-vertical shadow-z-1">
+  <!-- Table starts here -->
+  <table id="resultstable" class="table table-striped table-mc-deep-orange">
+           <thead>
+             <tr>
+               <th>Match</th>
+               <th>Result</th>
+               <th>Red</th>
+               <th>Blue</th>
+             </tr>
+           </thead>
+           <tbody>
+             <tr>
+               <td data-title="Match">Q-1</td>
+               <td data-title="Result">58-120 B</td>
+               <td data-title="Red">13000</td>
+               <td data-title="Blue">15000</td>
+             </tr>
+             <tr>
+               <td data-title="Match"></td>
+               <td data-title="Result"></td>
+               <td data-title="Red">20000</td>
+               <td data-title="Blue">2000</td>
+             <tr>
+               <td data-title="Match">Q-2</td>
+               <td data-title="Result">106-105 R</td>
+               <td data-title="Red">19000</td>
+               <td data-title="Blue">3000</td>
+             </tr>
+             <tr>
+               <td data-title="Match"></td>
+               <td data-title="Result"></td>
+               <td data-title="Red">10000</td>
+               <td data-title="Blue">17000</td>
+             </tr>
+             <tr>
+               <td data-title="Match">Q-3</td>
+               <td data-title="Result">102-110 B</td>
+               <td data-title="Red">9000</td>
+               <td data-title="Blue">8000</td>
+             </tr>
+             <tr>
+               <td data-title="Match"></td>
+               <td data-title="Result"></td>
+               <td data-title="Red">7000</td>
+               <td data-title="Blue">21000</td>
+             </tr>
+           </tbody>
+         </table>
+  </div>
