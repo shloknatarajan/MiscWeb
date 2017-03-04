@@ -9,6 +9,28 @@ body {
   overflow-x: hidden;
 }
 
+.wrapper {
+  padding: 0px;
+  margin: 0px;
+  background-image: url("../img/actionshots/stlccmeet2.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+
+}
+
+.bwrapper {
+  background-color: white;
+  padding: 45px;
+  float: none;
+  position: static;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+
+
 .sep {
   max-width: 80px;
   border: 2px solid #0d0d0d;
@@ -236,7 +258,7 @@ Navigation Style
 }
 
 .top-nav-collapse {
-  background: #24242a;
+  background: rgba(13, 13, 13, 0.8);
 }
 .top-nav-collapse .navbar-brand {
   height: auto;
@@ -707,7 +729,7 @@ Media Queries Style
     display: block;
   }
   .navbar-default .navbar-collapse {
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 1px 0 rgba(13, 13, 13, 0.8);
   }
   .navbar-default .navbar-collapse.collapse {
     display: none !important;
