@@ -1,0 +1,89 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  overflow-x: hidden;
+  background-image: url("../img/actionshots/scmeet2.jpg");
+  background-size:100%;
+  width:100%;
+  height: 500px;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size:cover;
+  margin: 0px;
+  padding: 0px;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url("../img/actionshots/scmeet2.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.bwrapper {
+  background-color: white;
+  padding: 45px;
+  float: none;
+  position: static;
+  margin-left: 14%;
+  margin-right: 14%;
+  margin-top: 14%;
+  margin-bottom: 2%;
+  letter-spacing: 0.01em;
+}
+
+.bwrapper h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+  letter-spacing: 0.01em;
+
+}
+
+.bwrapper h3 {
+  font-size: 1.7em;
+  letter-spacing: 0.01em;
+ 
+}
+
+.bwrapper h4 {
+  font-size: 1.17em;
+  letter-spacing: 0.01em;
+
+}
+
+.bwrapper p {
+  letter-spacing: 0.01em;
+
+}
+
+@media screen and (max-width: 600px) {
+  .bwrapper {
+    padding: 5px;
+    height: 100%;
+    margin-left:8%;
+    margin-right: 8%;
+    margin-bottom: 2%;
+    margin-top:20%;
+  }
+  
+} 
+
+@media screen and (min-width: 600px) {
+    p {
+    padding-left: 1em;
+    }
+    h4 {
+    padding-left: 0.5em;
+    }
+}
