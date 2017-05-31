@@ -94,6 +94,32 @@ p {
   font-size: 18px;
   font-weight: 700;
 }
+/* ==========================================================================
+Container Editing (Normally Default stuff inside boostrap)
+========================================================================== */
+
+.customcontainer {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .customcontainer {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .customcontainer {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .customcontainer {
+    width: 1170px;
+    width: 80%;
+  }
+}
 
 /* ==========================================================================
 Buttons Styles
@@ -217,7 +243,7 @@ Preloader Style
 Navigation Style
 ========================================================================== */
 .navbar-default {
-  background: rgba(13, 13, 13, 0.6);
+  background: rgba(13, 13, 13, 0.8);
   margin-bottom: 0;
   border: none;
 }
@@ -229,7 +255,8 @@ Navigation Style
   width: 50%;
 }
 .navbar-default .nav > li > a {
-  font-size: 14px;
+  font-size: 16px;
+  font-size:1.3;
   color: #fff;
   font-weight: 700;
   text-transform: uppercase;
@@ -277,9 +304,7 @@ Navigation Style
     /* ==========================================================================
 Sliders Style
 ========================================================================== */
-#eventscontainer {
-  background: rgba(13, 13, 13, 0.6);
-}
+
 
 
 #owl-hero {
@@ -490,6 +515,48 @@ Pics Style
   font-weight: 700;
 }
 
+.picscontainer {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: ;
+}
+/* ==========================================================================
+Footer Map Style
+========================================================================== */
+footer {
+  background: #000000;
+  padding: 60px 0;
+  text-align: center;
+}
+footer h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+footer .social {
+  margin: 40px 0;
+}
+footer .social a {
+  color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+footer .social a:hover,
+footer .social a:focus,
+footer .social a:active {
+  color: #a3a3a3;
+}
+footer h6 {
+  text-transform: uppercase;
+  color: #fff;
+}
+
+footer p {
+  color:#fff;
+}
 
     /* ==========================================================================
 Media Queries Style
@@ -497,7 +564,7 @@ Media Queries Style
 @media (max-width: 992px) {
   /*-- Navigation --*/
   .navbar-default {
-    background: rgba(13, 13, 13, 0.8);
+    background: rgba(13, 13, 13, 0.9);
   }
   .navbar-default .navbar-header {
     width: 100%;
@@ -519,7 +586,7 @@ Media Queries Style
     border: none;
   }
   .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: rgba(252, 125, 125, 1);
   }
   .navbar-default .navbar-toggle:hover,
   .navbar-default .navbar-toggle:focus,
@@ -534,7 +601,7 @@ Media Queries Style
     display: block;
   }
   .navbar-default .navbar-collapse {
-    box-shadow: inset 0 1px 0 rgba(13, 13, 13, 0.8);
+    box-shadow: inset 0 1px 0 rgba(13, 13, 13, 0.9);
   }
   .navbar-default .navbar-collapse.collapse {
     display: none !important;
